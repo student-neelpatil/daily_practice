@@ -8,6 +8,10 @@ void Reverse_string(string str){
    stack<char>s;
    stack<char>rev;
 
+    for(int i=0;i<str.size();i++){
+        s.push(str[i]);
+    }
+ 
    while(!s.empty()){
      char topele= s.top();
      s.pop();
@@ -21,14 +25,12 @@ void Reverse_string(string str){
    }
 }
 
+
 int main(){
-    stack<char>st;
    
     string str="Neel";
 
-    for(int i=0;i<str.size();i++){
-        st.push(str[i]);
-    }
+    
  
 
     Reverse_string(str);
