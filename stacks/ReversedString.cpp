@@ -3,7 +3,9 @@
 using namespace std;
 
 
-void Reverse_string(stack<char>&s){
+void Reverse_string(string str){
+
+   stack<char>s;
    stack<char>rev;
 
    while(!s.empty()){
@@ -29,5 +31,5 @@ int main(){
     }
  
 
-    Reverse_string(st);
+    Reverse_string(str);
 }
